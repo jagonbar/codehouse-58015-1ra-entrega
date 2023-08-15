@@ -9,7 +9,7 @@ main{
     .title{
         margin             : 0;
         padding            : 3px;
-        background-color   : #c20000;
+        background-color   : $color-rojo;
         background-image   : url(/multimedia/img/joystick-rojo.jpg);
         background-repeat  : no-repeat;
         background-size    : contain;
@@ -17,15 +17,20 @@ main{
         text-align         : center;
         
         display            : flex;
+        flex-direction: column;
         justify-content    : center;
         align-items        : center;
-        h1{
-            color      : white;
-            font-family: $font-orbitron;
-        }
+        color      : white;
+        font-family: $font-orbitron;
+        
         @media only screen and (max-width:400px) {
             h1{         
                 font-size  : 0.8rem;
+            }
+            h2{         
+                font-size  : 0.4rem;
+                
+                
             }
         }
         @media only screen and (min-width:401px) and (max-width:960px) {
@@ -33,11 +38,18 @@ main{
             h1{               
                 font-size  : 1rem;
             }            
+            h2{         
+                font-size  : 0.5rem;
+    
+            }
         }
         @media only screen and (min-width:961px) {
             height             : 100px;
             h1{            
                 font-size  : 2rem;
+            }
+            h2{         
+                font-size  : 1rem;                                    
             }
         }        
         // object-fit      : fill;

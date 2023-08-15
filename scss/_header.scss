@@ -1,43 +1,40 @@
 // header
-header{        
-    // background-image: url(/multimedia/img/backg.png);
-    // background-repeat: repeat;
-    // background-size:500px;
-    
-    background-color: #d3d00c49;
+header {
+    // background-color : #d3d00c49;
+    background: rgba(116, 114, 17, 0.377);
+    background: linear-gradient(
+        180deg,
+        rgba(116, 114, 17, 0.377) 0%,
+        rgba(194, 0, 0, 1) 100%
+    );
     margin: 0 auto;
     height: 5rem;
-    /* width: 100vw; */
+
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* border: 1px dashed red; */
-}
-#header-logo{
-    font-family:$font-orbitron;
-    font-size: 1.5rem;
-}
-#header-logo-search{
-    text-align: left;
-    margin: 0 10% ;    
-    box-sizing: content-box;    
-    input{
-        height: 1.4rem;
-        width: 20rem;
-        border-radius: 5px;
-        border: 1px dotted gray;
-        color: rgba(12, 12, 12, 0.651);
-        box-shadow: 2px 2px  rgb(255, 0, 0);;
+    justify-content: space-between;
+
+    @media only screen and (max-width:400px) {
+        font-size: 1rem;
+        
     }
-}
-.header-logo-search__element{
-    display: inline;
-    color: rgb(255, 0, 0);
-    text-shadow: 2px 2px #000000f5;
-}
-#header-cart{
-    font-family:$font-orbitron;
-    font-size: 1.3rem;
-    color:rgb(255, 0, 0);
-    text-shadow: 2px 2px #000000f5;
+    @media only screen and (min-width:401px) and (max-width:960px) {
+        
+        font-size: 2rem;
+    }
+    @media only screen and (min-width:961px) {
+        font-size: 3rem;
+
+    }
+    font-family: $font-orbitron;
+    text-shadow: $sombra;
+    
+    #header-logo {
+        color: $blanco;//$color-rojo;
+    }
+    
+    #header-cart-user {
+        color:$blanco;
+        text-shadow: $sombra;
+    }
 }
