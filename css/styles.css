@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Orbitron";
-  src: url(/multimedia/fonts/Orbitron-Black.ttf);
+  src: url(multimedia/fonts/Orbitron-Black.ttf);
 }
 @font-face {
   font-family: "Jura";
-  src: url(/multimedia/fonts/Jura-VariableFont_wght.ttf);
+  src: url(multimedia/fonts/Jura-VariableFont_wght.ttf);
 }
 body {
   padding: 0;
